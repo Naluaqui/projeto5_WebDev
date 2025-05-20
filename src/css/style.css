@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    border: 1px solid #333;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.video-container,
+.login-container{
+    flex:1;
+    padding: 1px;
+    transition: .5s ease-in-out;
+}
+.video-container video{
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    order: 1;
+}
+.login-container{
+    background-image: linear-gradient(aqua, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+.form-group{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-group input[type="text"],
+.form-group input[type="password"]{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #cf06f7;
+    border-radius: 10px;
+}
+#btnEntrar{
+    padding: 10px 20px;
+    background: rgb(107, 235, 107);
+    color:#000;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btnTrocar{
+    padding: 10px 20px;
+    background-image: linear-gradient(rgb(0, 229, 255), #cf06f7);
+    color:#000;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.message{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.message.sucess{
+    background: #f4f4f4;
+    color: #cf06f7;
+    border-radius: 1px solid #eaff00;
+}
